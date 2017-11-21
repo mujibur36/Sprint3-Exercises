@@ -16,19 +16,25 @@ import org.junit.Test;
 
 public class JUnitExerciseTest {
 
-	// exercise 1.1
+/*	// exercise 1.1
+	## :star: Exercise 1
+
+	Ensure via JUnit tests with Hamcrest matchers that `list` from `code.JUnitExercise.java`:
+	  1. has a size of `3`
+	  2. contains the elements `2, 4, 5` in any order
+	  3. every item is greater than `1`*/
     @Test
     public void hasSizeOf3() {
     		assertThat(list, hasSize(3));
     }
     
-    // exercise 1.2
+    // exercise 1.2 	2. contains the elements `2, 4, 5` in any order
     @Test
     public void containsNumbersInAnyOrder() {
         assertThat(list, containsInAnyOrder(2, 4, 5));
     }
     
-    // exercise 1.3
+    // exercise 1.3		3. every item is greater than `1`
     @Test
     public void everyItemGreaterThan1() {
         assertThat(list, everyItem(greaterThan(1)));
